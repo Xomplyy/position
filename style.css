@@ -1,12 +1,107 @@
+:root {
+    --font-primary: 'font-primary';
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family:'font-primary';
+    src: url('font/Roboto-Regular.ttf');
+}
 html {
     font-size: 62.5%;
+    font-family:var(--font-primary);
+    background-color: rgb(231, 231, 231);
 }
 body {
     font-size: 1.6rem;
+}
+p {
+    text-align: justify;
+    line-height: 2.5rem;
+}
+img {
+    width: 100%;
+}
+header {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+main {
+    padding-top: 5rem;
+}
+.logo {
+    width: 4rem;
+
+}
+.fondo {
+    max-width: 80rem;
+    width: 90%;
+    margin: 3.2rem auto;
+}
+.fondo .contenido {
+    background: url(img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding-top: 57%;
+}
+
+.fondo .contenido .section {
+    width: 30%;
+    height: 5%;
+    border-radius: 1.5rem;
+    border: 1px solid red;
+    position: absolute;
+}
+.fondo .contenido .section.uno {
+    top: 3.5%;
+    left: 7%;
+}
+.fondo .contenido .section.dos {
+    top: 7%;
+    left: 39%;
+    width: 24%;
+}
+.fondo .contenido .section.tres {
+    top: 4%;
+    left: 72%;
+    width: 25%;
+    height: 6%;
+}
+.fondo .contenido .section.cuatro {
+    top: 14.5%;
+    left: 15%;
+    width: 19%;
+}
+.fondo .contenido .section.cinco {
+    top: 24.5%;
+    left: 10%;
+    height: 7%;
+    width: 28%;
+}
+.fondo .contenido .section.seis {
+    top: 16.5%;
+    left: 57%;
+    height: 5.5%;
+}
+.fondo .contenido .section.siete {
+    top: 26.5%;
+    left: 64%;
+}
+.ocho {
+    position: absolute;
+   top: 40%; 
+   left: 40%;
+}
+.ocho img {
+    width: 20%;
 }
